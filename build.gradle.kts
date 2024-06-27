@@ -46,4 +46,4 @@ kotlin {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
-jib.to.image = "victortarasov/executor-config-service:v4"
+jib.to.image = "victortarasov/executor-config-service:v5"
