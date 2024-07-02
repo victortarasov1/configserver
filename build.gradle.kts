@@ -29,6 +29,7 @@ dependencies {
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	implementation("org.springframework.cloud:spring-cloud-starter-config")
+	runtimeOnly("io.micrometer:micrometer-registry-prometheus")
 }
 
 dependencyManagement {
@@ -46,4 +47,4 @@ kotlin {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
-jib.to.image = "victortarasov/executor-config-service:v6"
+jib.to.image = "victortarasov/executor-config-service:v7"
